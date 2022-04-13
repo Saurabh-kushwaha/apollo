@@ -1,0 +1,9 @@
+.table_border{
+    background-color: rgb(238, 176, 176);
+}
+.home_table{
+    background-color: antiquewhite;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+}

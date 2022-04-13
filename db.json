@@ -1,0 +1,39 @@
+{
+    "data":[
+        {
+            "id":1,
+            "doctors": "Dr. Manav Luthra",
+            "speciality":"Orthopedist",
+            "availability":"9:00 - 10:00 AM",
+            "cost": 500
+        },
+          {
+            "id":2,
+            "doctors": "Dr. Mohd Shahid",
+            "speciality":"Internal Medicine",
+            "availability":"10:00 - 11:00 AM",
+            "cost": 600
+        },
+        {
+            "id":3,
+            "doctors": "Dr. Rita Mittal",
+            "speciality":"Gynecologist",
+            "availability":"11:00 - 12:00 AM",
+            "cost": 400
+        },
+        {    
+            "id":4,
+            "doctors": "Dr. Ashish Mehrotra",
+            "speciality":"General Physician",
+            "availability":"12:00 - 01:00 PM",
+            "cost": 400
+        },
+        {
+            "id":5,
+            "doctors": "Dr. Abhinav Sengar",
+            "speciality":"GastroIntestinal Surgeon",
+            "availability":"01:00 - 02:00 PM",
+            "cost": 500
+        }
+    ]
+}
