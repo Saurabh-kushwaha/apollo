@@ -7,3 +7,19 @@
     padding: 20px;
     margin-top: 50px;
 }
+.button_booking{
+    background-color: rgb(28, 227, 28);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px;
+}
+.form_data{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    padding: 20px;
+    width: 400px;
+}

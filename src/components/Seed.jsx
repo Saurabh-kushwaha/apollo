@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext} from 'react'
 import styled from './seed.module.css';
+import { ContextProvider } from '../contextApi/ContextApi';
+import { Link} from 'react-router-dom';
 
 function Seed() {
-  const [data, setData] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:8000/data')
-            .then((d) => d.json())
-            .then((res) => setData(res))
-            .catch((e) => console.log(e.message)) 
-    }, []);   
+  const { data } = useContext(ContextProvider);
+  
   return (
     <table className={styled.home_table}>
         <thead className={styled.table_border}>
@@ -29,10 +26,10 @@ function Seed() {
                 <td>{e.speciality}</td>  
                 <td>{e.availability }</td>  
                 <td>{e.cost}</td>  
-                <button>Book Appointment</button>  
+                <Link className={styled.button_booking} to="/form" >Book Appointment</Link>  
             </tr>   
             )}           
-        </tbody>  
+      </tbody>  
     </table>
   )
 }

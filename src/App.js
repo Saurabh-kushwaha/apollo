@@ -1,9 +1,12 @@
 import './App.css';
-import Seed from './components/Seed';
+import Page from './components/Page';
+import ContextApi from './contextApi/ContextApi';
 function App() {
   return (
     <div className="App">
-       <Seed/>
+      <ContextApi>
+        <Page/>
+      </ContextApi>
     </div>
   );
 }
