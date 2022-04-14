@@ -4,7 +4,7 @@ import styled from './seed.module.css';
 function ShowHistry() {
    const [data, setData] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/consumer')
+        fetch('https://undb.herokuapp.com/consumer')
             .then((d) => d.json())
             .then((res) => setData(res))
             .catch((e) => console.log(e.message)) 

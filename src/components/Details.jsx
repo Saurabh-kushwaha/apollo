@@ -16,7 +16,7 @@ function Details() {
             time: time
         };
 
-        fetch("http://localhost:8000/consumer", {
+        fetch("https://undb.herokuapp.com/consumer", {
             method: "POST",
             body: JSON.stringify(_data),
             headers: { "Content-type": "application/json; charset=UTF-8" },

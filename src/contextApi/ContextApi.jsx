@@ -5,7 +5,7 @@ export const ContextProvider = createContext();
 function ContextApi({ children }) {
   const [data, setData] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/data')
+        fetch('https://undb.herokuapp.com/data')
             .then((d) => d.json())
             .then((res) => setData(res))
             .catch((e) => console.log(e.message)) 
